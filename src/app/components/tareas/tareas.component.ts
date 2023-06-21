@@ -29,4 +29,12 @@ export class TareasComponent {
     this.listTask.splice(i, 1);
   }
 
+  completeTask(task: Task, i: number): void{
+    console.log(`Intial Status: ${this.listTask[i].status}`)
+    
+    this.listTask[i].status = !task.status
+
+    console.log(`Finish Status: ${this.listTask[i].status}`)
+  }
+
 }
