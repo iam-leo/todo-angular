@@ -25,4 +25,8 @@ export class TareasComponent {
     this.nameTask = ''
   }
 
+  deleteTask(i: number){
+    this.listTask.splice(i, 1);
+  }
+
 }
